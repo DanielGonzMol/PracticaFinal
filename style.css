@@ -82,6 +82,7 @@ section {
   border-radius: 10px;
   padding: 20px;
   width: 100%;
+  margin: 30px;
   box-shadow: 0 0 20px 1px #76a8de;
 }
 
@@ -153,7 +154,7 @@ footer div {
 
 .intro {
   width: 100%;
-  height: 40rem;
+  height: 90vh;
 
   align-self: flex-start;
   justify-self: flex-start;
@@ -163,7 +164,7 @@ footer div {
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1)
   );
-  border: #76a8de 1px solid;
+  border-bottom: #76a8de 1px solid;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -180,11 +181,13 @@ footer div {
 }
 
 .secciones {
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-self: center;
   margin-top: 30px;
   margin-bottom: 100px;
+  justify-content: center;
+  flex-direction: column;
 }
 strong {
   color: #0aff52;
@@ -199,8 +202,27 @@ strong {
   padding: 0;
   left: 0;
   right: 0;
-  top: 103px;
+  top: 100px;
   bottom: 0;
   z-index: -1;
   filter: blur(5px);
+}
+
+a .icon:hover {
+  fill: #0aff52;
+}
+
+.reducido {
+  width: 70%;
+  align-self: center;
+}
+
+.columnas{
+  display: flex;
+  flex-direction: row;
+}
+#contenedorColumnas {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
