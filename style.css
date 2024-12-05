@@ -84,6 +84,7 @@ section {
   width: 100%;
   margin: 30px;
   box-shadow: 0 0 20px 1px #76a8de;
+  text-align: center;
 }
 
 footer {
@@ -124,33 +125,6 @@ footer div {
 .fondo {
   background-color: #000000;
 }
-.fondoDetalle {
-  color: #161616;
-}
-
-.primario {
-  color: #179117;
-}
-
-.secundario {
-  color: #361c85;
-}
-
-.acento {
-  color: #00ff00;
-}
-
-.fondoPrimario {
-  background-color: #179117;
-}
-
-.fondoSecundario {
-  background-color: #361c85;
-}
-
-.fondoAcento {
-  background-color: #00ff00;
-}
 
 .intro {
   width: 100%;
@@ -188,6 +162,7 @@ footer div {
   margin-bottom: 100px;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 strong {
   color: #0aff52;
@@ -217,12 +192,71 @@ a .icon:hover {
   align-self: center;
 }
 
-.columnas{
+.columnas {
   display: flex;
   flex-direction: row;
+  flex-wrap:nowrap;
 }
 #contenedorColumnas {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.img-columna {
+  width: inherit;
+  border-radius: 10px;
+}
+
+.seccion-tienda {
+  background-color: #000000;
+  color: #cef1ff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin: 30px;
+  box-shadow: 0 0 20px 1px #76a8de;
+  transition: 0.2s;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portadaGaleria{
+  width: 30vw;
+}
+
+.seccion-tienda:hover {
+  background-color: #76a8de;
+  color: black;
+}
+
+#gif-hola {
+  width: 300px;
+}
+
+#img-kits {
+  height: 30vh;
+}
+
+.rainbow {
+  animation: colorRotate 3s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
 }
